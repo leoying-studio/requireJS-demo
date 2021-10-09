@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.js" data-main="main"></script>
+
+    <style>
+        .slider {
+            width: 400px;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        .slider-item {
+            display: inline-block;
+            width: 400px;
+            height: 300px;
+            font-size: 0;
+            background-image: url('https://pic.netbian.com/uploads/allimg/210920/233242-16321519624608.jpg');
+            background-position: center center;
+            background-size: 100% 100%;
+        }
+        .slider-item:first-child {
+            background-color: red;
+        }
+        .slider-item:nth-child(2) {
+            background-color: green;
+            background-image: url('https://pic.netbian.com/uploads/allimg/191026/001458-157202009858e9.jpg');
+        }
+        .slider-item:nth-child(3) {
+            background-color: blue;
+            background-image: url('https://pic.netbian.com/uploads/allimg/211007/211537-16336125377e8e.jpg');
+        }
+        .slider-inner {
+            white-space:nowrap;
+            font-size: 0;
+        }
+        .serial {
+            position: absolute;
+            bottom: 10px;
+            white-space:nowrap;
+            font-size: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root">
+        <div class="slider">
+            <div class="slider-inner" id="sliderInner">
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+            </div>
+            <ul class="serial" id="serial"></ul>
+        </div>
+    </div>
+</body>
+
+</html>
